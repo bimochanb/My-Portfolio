@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import profileImage from './bimo.jpg'
 
 const About = () => {
     return (
@@ -9,7 +8,7 @@ const About = () => {
                 <div className="max-w-4xl mx-auto text-center p-8">
                     <h2 className="text-3xl font-bold mb-10 mt-0">About Me</h2>
                     <div className="mb-8">
-                        <img src={profileImage} alt="Profile" className="rounded-full w-64 h-64 border-4 border-gradient-blue-purple mx-auto mb-4" />
+                        <img src='/images/bimo.jpg' alt="Profile" className="rounded-full w-64 h-64 border-4 border-gradient-blue-purple mx-auto mb-4" />
                     </div>
                     <div className="mb-8">
                         <h3 className="text-3xl font-bold mb-2">Bimochan Bajimaya</h3>

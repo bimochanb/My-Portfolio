@@ -2,29 +2,29 @@ import React from 'react';
 const projects = [
     {
         id: 1,
-        title: "Project 1",
-        image: "", // Replace with your project image URL
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et semper nisi.",
-        link: "/project1"
+        title: "QuickCare - Doctor Consultation Application",
+        image: "/images/quickcare.png", // Replace with your project image URL
+        description: "QuickCare is an online appointment booking application.",
+        link: "https://github.com/BimoChan07/QuickCare-PHP"
     },
     {
         id: 2,
-        title: "Project 2",
-        image: "project2.jpg", // Replace with your project image URL
+        title: "KisanArea - Farmers Assistance Web Application",
+        image: "/images/KA.jpg", // Replace with your project image URL
+        description: "KisanArea is a farming assistance web application that tends to solve the problem of broker system.",
+        link: "https://github.com/BimoChan07/KisanArea"
+    },
+    {
+        id: 2,
+        title: "Strumo - Online Guitar Store",
+        image: "/images/webw.png", // Replace with your project image URL
         description: "Vestibulum luctus, odio vel tempor dictum, velit leo egestas felis, vel euismod sem mi nec erat.",
-        link: "/project2"
+        link: "https://github.com/BimoChan07/Strumo"
     },
     {
         id: 2,
-        title: "Project 2",
-        image: "project2.jpg", // Replace with your project image URL
-        description: "Vestibulum luctus, odio vel tempor dictum, velit leo egestas felis, vel euismod sem mi nec erat.",
-        link: "/project2"
-    },
-    {
-        id: 2,
-        title: "Project 2",
-        image: "project2.jpg", // Replace with your project image URL
+        title: "Nepal Life Capital",
+        image: "/images/nli.png", // Replace with your project image URL
         description: "Vestibulum luctus, odio vel tempor dictum, velit leo egestas felis, vel euismod sem mi nec erat.",
         link: "/project2"
     },
@@ -38,8 +38,11 @@ const Portfolio = () => {
                 <h2 className="text-3xl font-bold mb-8">Portfolio</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map(project => (
-                        <div key={project.id} className="bg-gray-800 rounded-lg overflow-hidden shadow-md">
-                            <img src={project.image} alt={project.title} className="w-full h-64 object-cover" />
+                        <div key={project.id} className="bg-gray-800  rounded-xl overflow-hidden shadow-md">
+                            <div className="flex justify-center">
+
+                                <img src={project.image} alt={project.title} className="flex w-60 mt-2 h-64 object-cover" />
+                            </div>
                             <div className="p-4">
                                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                                 <p className="text-gray-300">{project.description}</p>
